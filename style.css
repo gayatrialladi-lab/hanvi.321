@@ -1,0 +1,360 @@
+```css
+/* =================================
+   SOGASARI - STYLE LIKE A QUEEN
+   Luxury Boutique Website
+================================= */
+
+/* GLOBAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: #fffaf2;
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =================================
+   HEADER AND NAVIGATION
+================================= */
+
+.header {
+    background-color: #080808;
+    color: #d4af37;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    font-size: 28px;
+    letter-spacing: 4px;
+    color: #d4af37;
+}
+
+.logo p {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #d4af37;
+}
+
+.header-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.header-actions a {
+    background-color: #d4af37;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+/* =================================
+   HERO SECTION
+================================= */
+
+.hero {
+    min-height: 520px;
+    background: #15100b;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 7%;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.subtitle {
+    color: #d4af37;
+    letter-spacing: 4px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.hero-content h2 {
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero-content h3 {
+    color: #d4af37;
+    font-size: 28px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: #eee;
+    margin-bottom: 25px;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 420px;
+    height: 420px;
+    object-fit: cover;
+    border: 3px solid #d4af37;
+    border-radius: 5px;
+}
+
+/* =================================
+   BUTTONS
+================================= */
+
+.shop-button,
+.gold-button {
+    display: inline-block;
+    background-color: #d4af37;
+    color: #080808;
+    padding: 13px 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 1px solid #d4af37;
+    transition: 0.3s;
+}
+
+.shop-button:hover,
+.gold-button:hover {
+    background-color: transparent;
+    color: #d4af37;
+}
+
+/* =================================
+   ABOUT SECTION
+================================= */
+
+.about {
+    text-align: center;
+    padding: 80px 10%;
+    background-color: #fffaf2;
+}
+
+.about h2 {
+    color: #9b7420;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 750px;
+    margin: 0 auto 25px;
+    font-size: 17px;
+}
+
+/* =================================
+   COLLECTION SECTION
+================================= */
+
+.collections {
+    padding: 70px 5%;
+    text-align: center;
+    background-color: #f5eee2;
+}
+
+.collections h2 {
+    font-size: 35px;
+    color: #8c681d;
+    margin-bottom: 10px;
+}
+
+.collections > p {
+    margin-bottom: 35px;
+}
+
+.collection-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.collection-card {
+    background: white;
+    padding: 12px;
+    border: 1px solid #d4af37;
+    transition: 0.3s;
+}
+
+.collection-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.collection-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.collection-card h3 {
+    color: #8c681d;
+    margin: 15px 0;
+}
+
+.collection-card a {
+    display: inline-block;
+    background: #080808;
+    color: #d4af37;
+    padding: 9px 20px;
+    margin-bottom: 10px;
+}
+
+/* =================================
+   BRAND MESSAGE
+================================= */
+
+.brand-message {
+    background-color: #080808;
+    color: white;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.brand-message h2 {
+    color: #d4af37;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.brand-message p {
+    margin-bottom: 25px;
+}
+
+/* =================================
+   FOOTER
+================================= */
+
+.footer {
+    background-color: #080808;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #d4af37;
+}
+
+.footer h2 {
+    color: #d4af37;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.footer-links a:hover {
+    color: #d4af37;
+}
+
+.copyright {
+    color: #aaa;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/* =================================
+   MOBILE RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 900px) {
+
+    .collection-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 45px 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .hero-image img {
+        height: 300px;
+    }
+
+    .collection-container {
+        grid-template-columns: 1fr;
+    }
+
+    .collections h2,
+    .brand-message h2 {
+        font-size: 27px;
+    }
+
+    .logo h1 {
+        font-size: 23px;
+    }
+}
+```
